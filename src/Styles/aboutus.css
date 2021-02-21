@@ -17,7 +17,10 @@
   .heading {
     height: 700px;
     width: 100%;
-    background-color: black;
+    background-image: url("../Assets/aboutUs.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     position: relative;
    }
    .heading h2 {

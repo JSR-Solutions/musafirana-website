@@ -38,7 +38,7 @@ const Packages = () => {
     return (
         <div>
             {isFetched ? <div><Header />
-            <div className="heading">
+            <div className="heading-package">
                 <h2>Packages</h2>
                 <h2>Packages</h2>
             </div>
