@@ -42,7 +42,7 @@ function Contact() {
 
   return (
     <div className="topicontac">
-      <div className="heading">
+      <div className="heading-contact">
         <h2>Contact Us</h2>
         <h2>Contact Us</h2>
       </div>
