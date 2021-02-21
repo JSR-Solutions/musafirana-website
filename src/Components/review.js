@@ -14,7 +14,7 @@ function Review(){
                 <h1 className="h_h1">Our Top Reviews</h1>
             </div>
                 <div className="h_reviews">
-                <Carousel>
+                <Carousel classname="h_review_carousel">
                     <Carousel.Item className="h_Sreview" interval={5000}>
                         <div >
                             <img className="review_img" src="https://lh3.googleusercontent.com/a-/AOh14Gjb_6Vc0eJ4UujknLKyBJ9Ms896gNTvN8vCxagBuQ=w75-h75-p-rp-mo-br100"></img>
