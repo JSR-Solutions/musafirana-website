@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import "../Styles/Footer.css";
 import $ from "jquery";
-import { IoLogoFacebook, IoLogoTwitter, IoLogoWhatsapp, IoIosArrowUp} from "react-icons/io";
+import { IoLogoFacebook, IoLogoTwitter, IoLogoWhatsapp, IoIosArrowUp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import Logo from "../Assets/logo.jfif";
 
@@ -16,31 +16,6 @@ const Footer = () => {
 
   return (
     <>
-      <div className="foopart1">
-        <Container>
-          <Row>
-            <Col md={6}>
-              <div className="foopart21">
-                <h3>Subscribe to our Newsletter</h3>
-                <p>
-                  Get e-mail update about our latest products and special deals
-                  and offers
-                </p>
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className="foopart22">
-                <input placeholder="Enter Email Address" />
-                <button>Subscribe</button>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div onClick={upwardmove} className="foopart2">
-      <IoIosArrowUp class = "mnb" aria-hidden ="true"/>
-      </div> 
-
       <div className="home15">
         <div className="home16">
           <Container>
@@ -49,7 +24,7 @@ const Footer = () => {
                 <div className="home18">
                   <h3 className="margsake">About Us</h3>
                   <p>
-                  Musafirrana Travel is one of India's coolest travel companies, Where the goal is to target every age group and profession and make travel easy and economical on the pocket.
+                    Musafirrana Travel is one of India's coolest travel companies, Where the goal is to target every age group and profession and make travel easy and economical on the pocket.
                   </p>
                 </div>
               </Col>
@@ -89,14 +64,14 @@ const Footer = () => {
                         Contact Us
                       </a>
                     </li>
-                    
+
                     <li>
                       <a className="linktohover" href="/custom-package">
                         Custom Package
                       </a>
                     </li>
                     <li>
-                    <a className="linktohover" href='/sign-up'>SignUp</a> / <a className="linktohover" href='/login'>Login</a>
+                      <a className="linktohover" href='/sign-up'>SignUp</a> / <a className="linktohover" href='/login'>Login</a>
                     </li>
                   </ul>
                 </div>
@@ -133,6 +108,35 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+// <div className="foopart1">
+// <Container>
+//   <Row>
+//     <Col md={6}>
+//       <div className="foopart21">
+//         <h3>Subscribe to our Newsletter</h3>
+//         <p>
+//           Get e-mail update about our latest products and special deals
+//           and offers
+//         </p>
+//       </div>
+//     </Col>
+//     <Col md={6}>
+//       <div className="foopart22">
+//         <input placeholder="Enter Email Address" />
+//         <button>Subscribe</button>
+//       </div>
+//     </Col>
+//   </Row>
+// </Container>
+// </div>
+// <div onClick={upwardmove} className="foopart2">
+// <IoIosArrowUp class = "mnb" aria-hidden ="true"/>
+// </div> 
+
+
+
 
 // /*<Col sm={4}  className="text-center m-1">
 // <a href="/" className="btn m-0 ">

@@ -10,6 +10,8 @@ import { Form } from 'react-bootstrap'
 import { isAuth } from '../helpers/auth';
 import { toast } from "react-toastify";
 import emailjs from 'emailjs-com';
+import Logo from "../Assets/logo.jfif";
+
 
 const isActive = (history, path) => {
     if (history.location.pathname === path) {
@@ -26,21 +28,21 @@ const isActive = (history, path) => {
 const Header = ({ history }) => {
     const changebackgroundd = () => {
         if (window.scrollY > 110) {
-            const navlink = document.querySelector('.header-main2')
+            // const navlink = document.querySelector('.header-main2')
             const navlinkss = document.querySelector('.hamburger')
-            const navlinks = document.querySelector('.header-main')
-            if (navlinks && navlinkss && navlink) {
-                navlinks.classList.add('header-main-exit')
+            const navlinks = document.querySelector('.header-main3')
+            if (navlinks && navlinkss) {
+                navlinks.classList.add('header-main3-exit')
                 navlinkss.classList.add('hamburger-exit')
-                navlink.classList.add("header-main2-exit");
+                // navlink.classList.add("header-main2-exit");
             }
         } if (window.scrollY <= 110) {
             const navlinkss = document.querySelector('.hamburger')
-            const navlinks = document.querySelector('.header-main')
-            const navlink = document.querySelector('.header-main2')
-            if (navlink && navlinks && navlinkss) {
-                navlink.classList.remove("header-main2-exit");
-                navlinks.classList.remove("header-main-exit");
+            const navlinks = document.querySelector('.header-main3')
+            // const navlink = document.querySelector('.header-main2')
+            if (navlinks && navlinkss) {
+                // navlink.classList.remove("header-main2-exit");
+                navlinks.classList.remove("header-main3-exit");
                 navlinkss.classList.remove('hamburger-exit')
             }
         }
@@ -96,33 +98,11 @@ const Header = ({ history }) => {
         <div className='header-main-main'>
             <div className='header-main'>
                 <div className='header-main1'>
-
-                    <div className='header-main2'>
-                        <div className='header-main21'>
-
-                            <div className='header-main23'>
-                                <AiFillPhone style={{ fontSize: '17px', margin: '-3.5px 0px 0 1px' }} /> <a href='tel:8800488956' style={{ color: 'black', marginRight: '6px' }}>+91-8800488956</a> |
-                            <IoMdMail style={{ fontSize: '17px', margin: '-3.5px 1px 0 9.5px' }} /> <a href='mailto:musafirranatravels@gmail.com' style={{ color: 'black' }}>musafirranatravels@gmail.com</a>
-                            </div>
-                            <div className='header-main22'>
-                                Follow Us |
-                            <IoLogoFacebook style={{ fontSize: '18px', margin: '-3px 4px 0 8px' }} />
-                                <AiFillInstagram style={{ fontSize: '18px', margin: '-3px 4px 0 4px' }} />
-                                <IoLogoTwitter style={{ fontSize: '18px', margin: '-3px 4px 0 4px' }} />
-                                <a style={{ color: 'black' }} href="https://api.whatsapp.com/send?phone=9868472340&text=I'm%20interested%20in%20your%20tourism%20package" target='_blank'>
-                                    <IoLogoWhatsapp style={{ fontSize: '18px', margin: '-3px 4px 0 4px' }} /></a>
-                            </div>
-
-                        </div>
-                    </div>
-
                     <div className='header-main3'>
                         <div className='header-main31'>
                             <div className='header-main32'>
-                                <div className='header-main321'></div>
                                 <Link to='/' style={isActive(history, '/')}>
-                                    <h3><span>Mus</span>afirrana</h3>
-                                    <p><span>Create</span> your Travel Story</p>
+                                    <img src={Logo} alt='logo' />
                                 </Link>
                             </div>
                             <div className="hamburger">
@@ -195,3 +175,23 @@ const Header = ({ history }) => {
 };
 
 export default withRouter(Header);
+
+
+// <div className='header-main2'>
+// <div className='header-main21'>
+
+//     <div className='header-main23'>
+//         <AiFillPhone style={{ fontSize: '17px', margin: '-3.5px 0px 0 1px' }} /> <a href='tel:8800488956' style={{ color: 'black', marginRight: '6px' }}>+91-8800488956</a> |
+//     <IoMdMail style={{ fontSize: '17px', margin: '-3.5px 1px 0 9.5px' }} /> <a href='mailto:musafirranatravels@gmail.com' style={{ color: 'black' }}>musafirranatravels@gmail.com</a>
+//     </div>
+//     <div className='header-main22'>
+//         Follow Us |
+//     <IoLogoFacebook style={{ fontSize: '18px', margin: '-3px 4px 0 8px' }} />
+//         <AiFillInstagram style={{ fontSize: '18px', margin: '-3px 4px 0 4px' }} />
+//         <IoLogoTwitter style={{ fontSize: '18px', margin: '-3px 4px 0 4px' }} />
+//         <a style={{ color: 'black' }} href="https://api.whatsapp.com/send?phone=9868472340&text=I'm%20interested%20in%20your%20tourism%20package" target='_blank'>
+//             <IoLogoWhatsapp style={{ fontSize: '18px', margin: '-3px 4px 0 4px' }} /></a>
+//     </div>
+
+// </div>
+// </div>
