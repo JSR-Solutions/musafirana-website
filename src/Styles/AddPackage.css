@@ -1,0 +1,42 @@
+.add-package-form {
+    margin-top: 160px;
+}
+
+.add-package-form-section {
+    margin-left: 48px;
+    margin-right: 24px;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.form-add-package {
+    text-align: left;
+    align-items:flex-start ;
+    padding: 0 !important;
+    margin-left: 28px;
+}
+
+.add-package-form-group {
+    width: 80%;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.inline-button {
+    display: flex;
+    margin: 8px 8px 8px 0px;
+    background-color: #fdfa56 !important;
+    border: none !important;
+    color: #000 !important;
+}
+
+.itinerary-input {
+    margin-top: 8px;
+}
+
+.add-package-button {
+    width: 100%;
+    background-color: #fdfa56 !important;
+    border: none !important;
+    color: #000 !important;
+}

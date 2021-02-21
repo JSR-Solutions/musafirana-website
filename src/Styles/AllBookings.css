@@ -1,0 +1,22 @@
+.all-booking-heading {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+    padding-top: 40px;
+    text-align: center  ;
+}
+
+.bookings-div {
+    text-align: left;
+    padding: 20px 30px !important;
+}
+
+.bookings-row {
+    justify-content: space-around;
+}
+
+.bookings-card {
+    text-align: left;
+    margin: 16px 8px;
+    padding: 10px 10px;
+    border: 1px solid;
+}

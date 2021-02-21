@@ -1,0 +1,298 @@
+.heading-contact {
+    height: 700px;
+    width: 100%;
+    padding: 330px 705px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   }
+  
+   .heading-contact h2 {
+      font-weight: normal;
+      position: absolute;
+      /* color:white; */
+      font-size: 180px;
+      padding: 160px 10px;
+      text-align: center;
+      font-family: 'Oleo Script', cursive !important;
+      transform: translate(-50%,-50%);
+      
+    }
+    .heading-contact h2:nth-child(1) {
+        color: transparent;
+
+        -webkit-text-stroke: 2px rgb(253, 250, 86);
+    }
+    .heading-contact h2:nth-child(2) {
+        color: rgb(253, 250, 86);
+
+        animation: animate 4s ease-in-out infinite;
+    }
+    @keyframes animate{
+        0%, 100%
+        {
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+        }
+        50%
+        {
+            clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        }
+    }
+    
+    .nsection{
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+        min-height: 100vh;
+        background-color: black;
+    }
+    .nsection::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+
+        background-color : rgb(253, 250, 86);
+
+    }
+    .contactcon{
+        position: relative;
+        min-width: 1100px;
+        min-height: 550px;
+        display: flex;
+        z-index: 2;
+        margin: 60px 0 110px 0;
+
+    }
+    .contact-info{
+        position: absolute;
+        top: 90px;
+        width: 350px;
+        height: calc(100% -80px);
+        background-color: black;
+        z-index: 2;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        /* box-shadow: 0 20px 0 20px ; */
+        justify-content: space-between;
+    }
+    .contactform h2{
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Libre Baskerville', serif;
+        
+
+    }
+    .coninfo{
+        position: relative;
+        margin: 20px 0;
+        padding-top: 20px;
+    }
+    .coninfo li{
+        position: relative;
+        list-style: none;
+        display: flex;
+        margin: 20px 0;
+        cursor: pointer;
+        align-items: flex-start;
+    }
+    .coninfo li span:nth-child(1){
+        width: 30px;
+        min-width: 30px;
+    }
+    .coninfo li span:nth-child(1) .tyu{
+       max-width: 100%;
+       filter: invert(1);
+       opacity: 0.5;
+    }
+    .coninfo li span:nth-child(2){
+        color: #fff;
+        margin-left: 10px;
+        font-weight: 300;
+        opacity: 0.5;
+        font-family: 'Poppins', sans-serif;
+    }
+    .coninfo li span:nth-child(2) i{
+       max-width: 100%;
+       filter: invert(1);
+       opacity: 0.5;
+       font-family: 'Libre Baskerville', serif;
+    }
+    .coninfo li:hover span:nth-child(1) .tyu,
+    .coninfo li:hover span:nth-child(2){
+        opacity: 1;
+    }
+    .contac-sci{
+        position: relative;
+        left: 30px;
+        display: flex;
+
+    }
+    .contac-sci li{
+        list-style: none;
+        margin-right: 15px;
+        padding-top: 40px;
+        
+    }
+    .contac-sci li a{
+        text-decoration: none;
+        
+    }
+    .sociocon{
+
+        filter: invert(1);
+        opacity: 0.5;
+        margin: 0 7px;
+        color: black;
+        
+
+
+    }
+    .sociocon:hover{
+        opacity: 1;
+    }
+
+    .contactform{
+        position:absolute;
+        padding: 70px 50px;
+        background-color: white;
+        width: calc(100% -150px);
+        margin-left: 150px;
+        padding-left: 250px;
+        height: 110%;
+        /* box-shadow: 0 50px 0 50px rgba(0, 0, 0, 0.5); */
+        
+    }
+    .contactform h2{
+        color: black;
+        font-weight: 500;
+        font-family: 'Libre Baskerville', serif;
+        ;
+    }
+    .contactform .formbox{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .formbox .inputbox{
+        position: relative;
+        margin: 0 0 35px 0;
+    }
+    .formbox .inputbox.w50{
+       width: 47%;
+    }
+    .formbox .inputbox.w100{
+        width: 100%;
+     }
+     .formbox .inputbox input,
+     .formbox .inputbox textarea{
+     
+      width: 100%  !important;
+      padding: 5px 0;
+      font-size: 18px;
+      font-weight: 300; 
+      color: #333;
+      border: none;
+      border-bottom: 1px solid #777;
+      outline: none;
+      resize: none;
+    }
+    .formbox .inputbox textarea{
+        min-height: 120px;
+    }
+    .formbox .inputbox span{
+        position: absolute;
+        left: 0;
+        font-size: 18px;
+      font-weight: 100; 
+      color: #333;
+      transition: 0.5%;
+      pointer-events: none;
+    
+    }
+    .formbox .inputbox input:focus ~ span,
+     .formbox .inputbox textarea:focus  ~ span,
+     .formbox .inputbox input:valid ~ span,
+     .formbox .inputbox textarea:valid  ~ span{
+         transform: translateY(-20px);
+         font-size: 12px;
+         font-weight: 300;
+         letter-spacing: 1px;
+
+         color: rgb(253, 250, 86);
+     }
+     .extrbt{
+         position: relative;
+         cursor: pointer;
+         background-color: black;
+
+         color: rgb(253, 250, 86)  !important;
+         border: none;
+         max-width: 150px;
+         padding: 12px;
+     }
+
+        /* background-color: rgb(253, 250, 86) ;
+
+        color: black  !important;
+     } */
+     .spea{
+        font-family: 'Libre Baskerville', serif;
+        color: #fff;
+     }
+     .kspan{
+         margin-left: 16px;
+     }
+     .ilus-img{
+        z-index: 1000;
+        width: 20%;
+        height: 100px;
+        position: absolute;
+        right: 40px;
+        top: 30%;
+    }
+    .ext{
+        display: none;
+        top: 800px;
+        position:static;
+    }
+    @media only screen and (max-width: 700px){
+        .formbox .inputbox textarea{
+            min-height: 50px;
+        }
+        .contactform .formbox{
+            
+            width: 60%;
+    
+        }
+    }
+    @media only screen and (max-width: 1075px){
+        .formbox .inputbox textarea{
+            min-height: 50px;
+        }
+        .contact-info{
+            display: none;
+        }
+        .ext{
+            display: inline;
+        }
+        .ilus-img{
+            display: none;
+        }
+        .contactform{
+            margin-right: 70px;
+            width: 70%;
+    
+        }
+
+    }

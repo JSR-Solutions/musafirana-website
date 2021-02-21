@@ -1,0 +1,139 @@
+.parentcustom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: rgb(253, 250, 86);
+}
+.contcustom{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px;
+    
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contcustom .formBox{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contcustom.formBox form{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+}
+.contcustom .formBox form h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    margin-top: 90px;
+}
+.contcustom .formBox form .inputBox{
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.contcustom .formBox form .inputBox:last-child{
+    margin-bottom: 0px;
+}
+.contcustom .formBox form .inputBox input,
+.contcustom .formBox form .inputBox textarea{
+    position: relative;
+    background: transparent;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    resize: none;
+    outline: 0;
+}
+.contcustom .formBox form .inputBox textarea{
+    height: 100px;
+}
+.contcustom .formBox form .inputBox input[type = "submit"]{
+    background: white;
+    padding: 8px 20px;
+    margin-top: -10px;
+    width: 100px;
+    cursor: pointer;
+    background: rgb(253, 250, 86);
+    color:black;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+
+}
+.contcustom .formBox form .inputBox input[type = "submit"]:focus{
+    background: black;
+    color: rgb(253, 250, 86);
+}
+
+.contcustom .formBox form .inputBox span{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.2s;
+
+}
+.contcustom .formBox form .inputBox input:focus ~ span,
+.contcustom .formBox form .inputBox textarea:focus ~ span,
+.contcustom .formBox form .inputBox input:valid ~ span,
+.contcustom .formBox form .inputBox textarea:valid ~ span{
+ transform: translateY(-23px);
+ color: rgb(253, 250, 86);
+}
+.contcustom .formBox form .inputBox input:focus,
+.contcustom .formBox form .inputBox textarea:focus,
+.contcustom .formBox form .inputBox input:valid,
+.contcustom .formBox form .inputBox textarea:valid{
+ border-bottom-color: #fff I !important;
+}
+
+.contcustom .imgBox{
+    position: relative;
+    left: 100px;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.contcustom .imgBox img{
+   width: 100%;
+}
+
+@media (max-width: 991px)
+{
+    .contcustom .formBox{
+        width: 80%;
+        padding: 0 0;
+    }
+    .contcustom .imgBox{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 540px)
+{
+    .contcustom .formBox {
+        width: 50%;
+    }
+}

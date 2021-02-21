@@ -1,0 +1,17 @@
+.admin-dashboard {
+    margin-left: 24px;
+    margin-top: 160px !important;
+}
+
+.admin-dashboard-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin-dashboard-title h1{
+    font-weight: 800;
+}
+
+.admin-dashboard-row {
+    padding-top: 24px;
+    margin: 0 16px;
+}
