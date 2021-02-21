@@ -1,24 +1,36 @@
 .carousel-item {
-    height: 480px;
+    height: 90vh;
     width: 100%;
 }
+
+.acarousel-div{
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}   
 
 .carousel-title {
     font-family: 'Poppins', sans-serif;
     font-size: 80px;
-    color:rgb(253, 250, 86);
+    color: white;
+    width: fit-content;
+    margin: auto;
     text-align: center;
-    padding-top: 120px;
     font-weight: bolder !important;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 0 10px;
 }
 
 .carousel-subtitle {
     font-family: 'Poppins', sans-serif;
-    color: rgb(253, 250, 86);
-    text-align: center;
+    color:  white;
+    width: fit-content;
+    margin: auto;
     font-size: 30px;
-    padding-top: 60px;
     font-weight: bolder !important;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 10px;
 }
 
 .item-one {
@@ -48,13 +60,14 @@
     }
 
     .carousel-title {
-        padding-top: 140px;
+        /* padding-top: 140px; */
         font-size: 70px !important;
     }
 
     .carousel-subtitle {
         font-size: 24px !important;
         opacity: 0;
+        display: none;
     }
     
     .item-one {
