@@ -38,11 +38,11 @@ const Packages = () => {
     return (
         <div>
             {isFetched ? <div><Header />
-            <div className="heading">
+            <div data-aos="fade-down" className="heading">
                 <h2>Packages</h2>
                 <h2>Packages</h2>
             </div>
-            <div className="home-packages">
+            <div data-aos="flip-down" className="home-packages">
             <div className="trending-packages">
                 <div className="trending-title">
                     <h1 className="title-trending">Our

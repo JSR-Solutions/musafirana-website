@@ -16,7 +16,7 @@ const Custompackage = () => {
     return (
         <div>
         <Header />
-            <Custompac />
+            <Custompac  />
             <Footer />
         </div>
     );
