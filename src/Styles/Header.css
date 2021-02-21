@@ -139,6 +139,9 @@
     /* font-weight: bold; */
     font-family: 'Poppins', sans-serif;
 }
+.header-main3-exit ul li{
+    color: black !important;
+}
 .header-main33 ul li:hover{
 
     /* color: rgb(253, 250, 86) !important; */
@@ -186,6 +189,9 @@
         display: unset;
         position: relative;
         top: 15%;
+    }
+    .header-main3-exit ul li{
+        color: white !important;
     }
     .header-main33 ul li{
         margin: 0 25px;
