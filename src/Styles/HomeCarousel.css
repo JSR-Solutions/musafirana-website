@@ -1,5 +1,5 @@
 .carousel-item {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -12,45 +12,60 @@
 .carousel-title {
     font-family: 'Poppins', sans-serif;
     font-size: 80px;
-    color: white;
+    color:  var(--mainWhite);
     width: fit-content;
     margin: auto;
     text-align: center;
     font-weight: bolder !important;
-    background-color: rgba(0, 0, 0, 0.418);
+    /* background-color: rgba(0, 0, 0, 0.575); */
     padding: 0 10px;
 }
 
 .carousel-subtitle {
     font-family: 'Poppins', sans-serif;
-    color:  white;
+    color:  var(--mainWhite);
     width: fit-content;
     margin: auto;
     font-size: 30px;
     font-weight: bolder !important;
     margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.418);
+    /* background-color: rgba(0, 0, 0, 0.575); */
     padding: 10px;
 }
 
 .item-one {
-    background:  url(../Assets/homebg1.jpg);
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.575), 
+        rgba(0, 0, 0, 0.575)
+      ), url(../Assets/homebg1.jpg);
     background-size: cover;
     background-position: right;
     opacity: 0.85;
 }
 .item-two {
-    background: url(../Assets/homebg2.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.575), 
+        rgba(0, 0, 0, 0.575)
+      ),url(../Assets/homebg2.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.85;
 }
 
 .item-three {
-    background: url(../Assets/homebg3.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.575), 
+        rgba(0, 0, 0, 0.575)
+      ),url(../Assets/homebg3.jpg);
     background-size: cover;
     background-position: left;
     opacity: 0.85;
+}
+
+.home-carousel-bottom1 h4{
+    margin-top: 0px !important;
+    padding-top: 5px !important;
 }
 
 @media screen and (max-width: 1080px) {
