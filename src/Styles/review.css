@@ -7,6 +7,9 @@
   background-size: cover;
 
 }
+.h_review_carousel{
+    height:450px;
+}
 .h_reviews{
     background: rgba( 255, 255, 255, 0.10 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -44,7 +47,11 @@ border-radius: 225px;
     text-align: center;
     padding-left: 3rem;
     padding-right: 3rem;
+    height: 450px;
     
+}
+.h_Sreview carousel-item{
+    height: 400px;
 }
 
 @media(max-width: 500px){
