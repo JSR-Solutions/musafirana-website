@@ -1,77 +1,86 @@
 .heading-custom {
-    height: 700px;
+    height: 100vh;
     width: 100%;
-    background-image:url("../Assets/custom_img.jpg");
+    background-image: url("../Assets/custom_img.jpg");
     background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-   }
-   .heading-custom h2 {
-      font-weight: normal;
-	  width: 100%;
-      position: absolute;
-      font-size: 180px;
-      text-align: center;
-      font-family: 'Oleo Script', cursive !important;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
+}
+
+.heading-custom h2 {
+    font-weight: normal;
+    width: 100%;
+    position: absolute;
+    font-size: 180px;
+    text-align: center;
+    font-family: 'Oleo Script', cursive !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-custom h2:nth-child(1) {
+    color: transparent;
+
+    -webkit-text-stroke: 2px white;
+}
+
+.heading-custom h2:nth-child(2) {
+    color: white;
+
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
     }
-    .heading-custom h2:nth-child(1) {
-        color: transparent;
 
-        -webkit-text-stroke: 2px white;
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
     }
-    .heading-custom h2:nth-child(2) {
-        color:white;
-
-        animation: animate 4s ease-in-out infinite;
-    }
-    @keyframes animate{
-        0%, 100%
-        {
-            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-        }
-        50%
-        {
-            clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-        }
-    }
+}
 
 
 
 
 
-.parentcustom{
+.parentcustom {
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 100vh;
     background: rgb(253, 250, 86);
 }
-.contcustom{
+
+.contcustom {
     position: relative;
     width: 100%;
     max-width: 1100px;
     margin: 20px;
-    
+
     background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.contcustom .formBox{
+
+.contcustom .formBox {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contcustom.formBox form{
+
+.contcustom.formBox form {
     position: relative;
     width: 100%;
     padding: 0 0 0 75px;
 }
+
 .contcustom .formBox form h2 {
     color: white;
     font-weight: 500;
@@ -81,16 +90,19 @@
     margin-bottom: 40px;
     margin-top: 90px;
 }
-.contcustom .formBox form .inputBox{
+
+.contcustom .formBox form .inputBox {
     position: relative;
     margin-bottom: 40px;
     width: 100%;
 }
-.contcustom .formBox form .inputBox:last-child{
+
+.contcustom .formBox form .inputBox:last-child {
     margin-bottom: 0px;
 }
+
 .contcustom .formBox form .inputBox input,
-.contcustom .formBox form .inputBox textarea{
+.contcustom .formBox form .inputBox textarea {
     position: relative;
     background: transparent;
     border: none;
@@ -100,21 +112,23 @@
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 300;
-    border-bottom: 2px solid rgba(255,255,255,0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     resize: none;
     outline: 0;
 }
-.contcustom .formBox form .inputBox textarea{
+
+.contcustom .formBox form .inputBox textarea {
     height: 100px;
 }
-.contcustom .formBox form .inputBox input[type = "submit"]{
+
+.contcustom .formBox form .inputBox input[type="submit"] {
     background: white;
     padding: 8px 20px;
     margin-top: -10px;
     width: 100px;
     cursor: pointer;
     background: rgb(253, 250, 86);
-    color:black;
+    color: black;
     font-size: 18px;
     font-weight: 400;
     border: none;
@@ -123,12 +137,13 @@
     margin-bottom: 40px;
 
 }
-.contcustom .formBox form .inputBox input[type = "submit"]:focus{
+
+.contcustom .formBox form .inputBox input[type="submit"]:focus {
     background: black;
     color: rgb(253, 250, 86);
 }
 
-.contcustom .formBox form .inputBox span{
+.contcustom .formBox form .inputBox span {
     position: absolute;
     left: 0;
     font-size: 16px;
@@ -136,49 +151,56 @@
     display: inline-block;
     pointer-events: none;
     letter-spacing: 1px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     transition: all 0.2s;
 
 }
-.contcustom .formBox form .inputBox input:focus ~ span,
-.contcustom .formBox form .inputBox textarea:focus ~ span,
-.contcustom .formBox form .inputBox input:valid ~ span,
-.contcustom .formBox form .inputBox textarea:valid ~ span{
- transform: translateY(-23px);
- color: rgb(253, 250, 86);
+
+.contcustom .formBox form .inputBox input:focus~span,
+.contcustom .formBox form .inputBox textarea:focus~span,
+.contcustom .formBox form .inputBox input:valid~span,
+.contcustom .formBox form .inputBox textarea:valid~span {
+    transform: translateY(-23px);
+    color: rgb(253, 250, 86);
 }
+
 .contcustom .formBox form .inputBox input:focus,
 .contcustom .formBox form .inputBox textarea:focus,
 .contcustom .formBox form .inputBox input:valid,
-.contcustom .formBox form .inputBox textarea:valid{
- border-bottom-color: #fff I !important;
+.contcustom .formBox form .inputBox textarea:valid {
+    border-bottom-color: #fff I !important;
 }
 
-.contcustom .imgBox{
+.contcustom .imgBox {
     position: relative;
     left: 100px;
     width: 50%;
     height: 100%;
     overflow: hidden;
 }
-.contcustom .imgBox img{
-   width: 100%;
+
+.contcustom .imgBox img {
+    width: 100%;
 }
 
-@media (max-width: 991px)
-{
-    .contcustom .formBox{
+@media (max-width: 991px) {
+    .contcustom .formBox {
         width: 80%;
         padding: 0 0;
     }
-    .contcustom .imgBox{
+
+    .contcustom .imgBox {
         display: none;
     }
-    
+
 }
-@media only screen and (max-width: 540px)
-{
+
+@media only screen and (max-width: 540px) {
     .contcustom .formBox {
         width: 50%;
+    }
+
+    .heading-custom h2 {
+        font-size: 100px !important;
     }
 }
