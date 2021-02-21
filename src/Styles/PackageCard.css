@@ -13,11 +13,17 @@
     color: #000;
 }
 
+.title-other {
+    color: #fff !important;
+    text-align: center;
+    font-weight: 600;
+}
+
+
 .home-packages {
-    background-color: #000;
+    background-color: #fff;
     /* background-size: cover; */
     background-repeat: repeat;
-    background-image: url(../Assets/bg1.png);
 }
 
 /* .trending-package-card {
@@ -55,6 +61,15 @@
     z-index: 1;
     width: 300px !important;
     margin: auto;
+}
+
+.trending-packages {
+    padding-bottom: 60px;
+}
+
+.other-packages {
+    background-color: #000;
+    padding-bottom: 60px;
 }
 
 .trending-package-container .trending-package-card {

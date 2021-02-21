@@ -30,13 +30,13 @@ function Custompac() {
 
   return (
     <div>
-      <div className="heading">
+      <div data-aos="fade-down" className="heading">
         <h2>Custom Package</h2>
         <h2>Custom Package</h2>
       </div>
       <div className="parentcustom">
-        <Container className="contcustom">
-          <div className="formBox">
+        <Container data-aos="flip-left" className="contcustom">
+          <div data-aos="flip-right" className="formBox">
             <form>
               <h2>Request custom package</h2>
               <div className="inputBox">
