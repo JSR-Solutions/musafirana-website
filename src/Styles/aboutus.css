@@ -247,11 +247,12 @@
 
 @media screen and (max-width:450px) {
   .heading {
-    height: 400px;
+    height: 600px;
   }
 
   .heading h2 {
     font-size: 80px !important;
+    width:90%
   }
 
   .banner22 {
