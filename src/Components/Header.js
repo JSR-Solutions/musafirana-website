@@ -16,11 +16,11 @@ import Logo from "../Assets/logo.jfif";
 const isActive = (history, path) => {
     if (history.location.pathname === path) {
 
-        return { color: 'rgb(253, 250, 86)' }
+        return { color: `var(--mainWhite)` }
 
     }
     else {
-        return { color: "rgb(112, 111, 111)" };
+        return { color: `var(--mainWhite)` };
     }
 }
 

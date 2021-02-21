@@ -21,3 +21,8 @@ code {
   
   font-family: 'Poppins', sans-serif;
 }
+
+:root {
+  --mainBlack: #020202;
+  --mainWhite: #ffffff;
+}
