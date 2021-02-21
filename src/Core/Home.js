@@ -76,46 +76,27 @@ const Home = () => {
 
                 <HomeCarousel />
               <div data-aos="flip-up" className="banner3">
-                <center><h1>WHY CHOOSE US?</h1></center>
+                
                 <div className='services'>
                   <Row>
 
-                    <Col lg={2} md={2}>
-                      <center>
-                        <img src={tag} />
-                        <h4>Unlimited</h4>
-                        <h6>Deals</h6>
-                      </center>
-                    </Col>
-                    <Col lg={2} md={2}>
+                   
+                    <Col lg={4} md={4}>
                       <center>
                         <img src={support} />
                         <h4>24/7</h4>
                         <h6>Support</h6>
                       </center>
                     </Col>
-                    <Col lg={2} md={2}>
-                      <center>
-                        <img src={team} />
-                        <h4>200+</h4>
-                        <h6>Ground Expert</h6>
-                      </center>
-                    </Col>
-                    <Col lg={2} md={2}>
-                      <center>
-                        <img src={hotels} />
-                        <h4>450+</h4>
-                        <h6>Hotels</h6>
-                      </center>
-                    </Col>
-                    <Col lg={2} md={2}>
+                  
+                    <Col lg={4} md={4}>
                       <center>
                         <img src={value} />
                         <h4>Happy</h4>
                         <h6>Clients</h6>
                       </center>
                     </Col>
-                    <Col lg={2} md={2}>
+                    <Col lg={4} md={4}>
                       <center>
                         <img src={security} />
                         <h4>100%</h4>
