@@ -17,16 +17,22 @@ import support from '../Assets/support.png'
 import fox from '../Assets/digitalfox.jpeg'
 import {AiOutlineMail} from 'react-icons/ai'
 import {AiFillPhone} from 'react-icons/ai'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const AboutUs = () => {
+
+  AOS.init() ;
   return (
+
     <div className="wrapper">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
       <div className="aboutus">
 
-        <div className="heading">
+        <div data-aos="fade-down" className="heading">
           <h2>About Us</h2>
           <h2>About Us</h2>
         </div>
@@ -39,34 +45,36 @@ const AboutUs = () => {
 
               <Row className='hmyadnhitumko'>
                 <Col sm={12} lg={6} xs={12}>
-                  <div className="banner1">
+                  <div data-aos="fade-right" className="banner1">
                     <img src={bg1} />
                   </div>
                 </Col>
 
                 <Col sm={12} lg={6} xs={12}>
-                  <p ><h3><div className='change-color'>INCREDIBLE</div> Experiences!
+                  <p ><h3><div data-aos="fade-down" className='change-color'>INCREDIBLE</div> Experiences!
                 </h3> Musafirrana Travel is one of India's coolest travel companies, Where the goal is to target every age group and profession and make travel easy and economical on the pocket. We have backpacking trips for youngsters and college students and we also have luxurious trips for corporates clients as well. Our goal is to make travel accessible for everyone. 
                 From kasol kheerganga, Manali, Chopta, Kedarkantha, Kashmir, Kerala, Sikkim, Rajasthan to Bali, Dubai, Greece, Paris we have every destination covered for you. We also do Kedarnath, Badrinath, Bada Chaar Dham, and EVEN KAILASH MANSAROVAR. We are experienced and Specialized in Treks like Kedarkantha, Dayra Bhugyal, Kheerganga, Kareri Lake, Indrahaar. Hampta Pass, Rupin Pass, Naag Tibba, RoopKund, Chawkhamba, and numerous other treks.
 </p>
                 </Col>
               </Row>
 
+              <hr className="hrr"></hr>
+
               <Row className='hmyadnhitumko'>
                 <Col md={{ order: 2, span: 12 }} lg={{ span: 6, order: 1 }} xs={12}>
-                  <p><h3><div className='change-color'>OUR</div> Beginning.</h3>We are a company of young and creative minds who want to turn into a big travel community.  Musafirrana Travel was founded in 2019 by Akash Rana, A Travel Enthusiast, A StoryTeller, A Budding Stand up Comedian, and a guy who has gone through a lot to make this dream of making a travel Community come true. Every trip There will be story Sessions so that we broaden our perception towards life.
+                  <p><h3><div data-aos="fade-down" className='change-color'>OUR</div> Beginning.</h3>We are a company of young and creative minds who want to turn into a big travel community.  Musafirrana Travel was founded in 2019 by Akash Rana, A Travel Enthusiast, A StoryTeller, A Budding Stand up Comedian, and a guy who has gone through a lot to make this dream of making a travel Community come true. Every trip There will be story Sessions so that we broaden our perception towards life.
 
 Hope we all will see each other one day on a path where everything brings us together.</p>
                 </Col>
                 <Col md={{ order: 1, span: 12 }} lg={{ span: 6, order: 2 }} xs={12}>
-                  <div className="banner1">
+                  <div data-aos="fade-left" className="banner1">
                     <img src={bg2} />
                   </div>
                 </Col>
               </Row>
 
               <div className='maujkaradibete'>
-                <div className='ekaurdiv'>
+                <div data-aos="flip-up" className='ekaurdiv'>
                   <center><h1>WHAT WE PROVIDE</h1></center>
 
                   <div className='services'>
@@ -123,7 +131,7 @@ Hope we all will see each other one day on a path where everything brings us tog
               </div>
               <br /><br /><br />
 
-              <div className="banner3">
+              <div data-aos="flip-up" className="banner3">
                 <center><h1>WHY CHOOSE US?</h1></center>
                 <div className='services'>
                   <Row>
@@ -176,7 +184,7 @@ Hope we all will see each other one day on a path where everything brings us tog
               </div>
 
               <div className="team">
-              <center><h1>OUR TEAM</h1></center>
+             <div data-aos="flip-up"> <center><h1>OUR TEAM</h1></center></div>
               <br></br><br></br>
               <Row>
               <Col>
