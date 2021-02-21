@@ -15,7 +15,7 @@
   }
   
   .heading {
-    height: 700px;
+    height: 100vh;
     width: 100%;
     background-image: url("../Assets/aboutUs.jpg");
     background-position: center;
@@ -25,7 +25,6 @@
    }
    .heading h2 {
       font-weight: normal;
-	  width: 100%;
       position: absolute;
       font-size: 180px;
       text-align: center;
