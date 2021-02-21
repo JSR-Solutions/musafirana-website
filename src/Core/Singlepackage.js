@@ -212,7 +212,7 @@ const Singlepackage = (props) => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col lg={6} md={12} sm={12}>
+                                <Col className="single-package-details-side" lg={6} md={12} sm={12}>
                                     <div className='single-pac3'>
                                         <Collapsible open="true" className="single-pack-detail-title" trigger="About the trip">
                                             <p className="single-pack-detail-value">{pro.tripDesc}</p>

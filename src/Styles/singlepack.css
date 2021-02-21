@@ -8,6 +8,10 @@
     background-color: black;
     padding-bottom: 40px;
 }
+
+.single-package-details-side {
+    padding-top: 80px;
+}
 .single-pac21{
     position: sticky !important;
     top: 0 !important;
