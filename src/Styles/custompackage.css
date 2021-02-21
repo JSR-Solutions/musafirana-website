@@ -1,7 +1,7 @@
 .heading-custom {
     height: 700px;
     width: 100%;
-    background-color: black;
+    background-image:url("../Assets/custom_img.jpg");
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
