@@ -27,12 +27,13 @@
 .heading h2 {
   font-weight: normal;
   position: absolute;
-  font-size: 180px;
+  font-size: 160px;
   text-align: center;
   font-family: 'Oleo Script', cursive !important;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width:98%;
 }
 
 .heading h2:nth-child(1) {
@@ -238,10 +239,16 @@
   margin-top: 60px;
   font-family: 'Libre Baskerville', serif !important;
 }
-
+@media screen and (max-width:1150px){
+  .heading h2{
+    font-size: 130px;
+    width:98%
+  }
+}
 @media screen and (max-width:850px) {
   .heading h2 {
     font-size: 100px;
+    width:98%;
   }
 }
 

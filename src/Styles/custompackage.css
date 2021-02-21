@@ -182,11 +182,19 @@
 .contcustom .imgBox img {
     width: 100%;
 }
+@media (max-width:1150px){
+    .heading-custom h2{
+        font-size: 140px;
+    }
+}
 
 @media (max-width: 991px) {
     .contcustom .formBox {
         width: 80%;
         padding: 0 0;
+    }
+    .heading-custom h2{
+        font-size: 120px;
     }
 
     .contcustom .imgBox {
