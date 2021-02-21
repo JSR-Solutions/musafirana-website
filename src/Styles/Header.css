@@ -136,7 +136,7 @@
 .header-main33 ul li{
     margin: 0 10px;
     font-size: 15.2px;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: 'Poppins', sans-serif;
 }
 .header-main33 ul li:hover{
@@ -169,21 +169,29 @@
     }
     .header-main33{
         position: fixed;
-        width: 275px !important;
+        width: 300px !important;
         height: 100% !important;
         flex-direction: column !important;
         align-items: start !important;
         justify-content: start !important;
-        padding-top: 60px !important;
-        transform: translateX(-275px);
+        /* padding-top: 60px !important; */
+        transform: translateX(-300px);
         transition: all 0.4s ease-out;
         padding-left: 0px !important;
         z-index: 1000;
         line-height: 75px;
-        background-color: white !important;
+        background-color: black !important;
     }
     .header-main33 ul{
         display: unset;
+        position: relative;
+        top: 15%;
+    }
+    .header-main33 ul li{
+        margin: 0 25px;
+        font-size: 21px;
+        font-weight: normal;
+        border-bottom: 1.8px solid rgb(129, 129, 129);
     }
     .header-main33.open{
         transform: translateX(0px);
