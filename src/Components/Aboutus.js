@@ -15,15 +15,15 @@ import team from '../Assets/team.png'
 import tag from '../Assets/tag.png'
 import support from '../Assets/support.png'
 import fox from '../Assets/digitalfox.jpeg'
-import {AiOutlineMail} from 'react-icons/ai'
-import {AiFillPhone} from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
+import { AiFillPhone } from 'react-icons/ai'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 
 const AboutUs = () => {
 
-  AOS.init() ;
+  AOS.init();
   return (
 
     <div className="wrapper">
@@ -52,7 +52,7 @@ const AboutUs = () => {
 
                 <Col sm={12} lg={6} xs={12}>
                   <p ><h3><div data-aos="fade-down" className='change-color'>INCREDIBLE</div> Experiences!
-                </h3> Musafirrana Travel is one of India's coolest travel companies, Where the goal is to target every age group and profession and make travel easy and economical on the pocket. We have backpacking trips for youngsters and college students and we also have luxurious trips for corporates clients as well. Our goal is to make travel accessible for everyone. 
+                </h3> Musafirrana Travel is one of India's coolest travel companies, Where the goal is to target every age group and profession and make travel easy and economical on the pocket. We have backpacking trips for youngsters and college students and we also have luxurious trips for corporates clients as well. Our goal is to make travel accessible for everyone.
                 From kasol kheerganga, Manali, Chopta, Kedarkantha, Kashmir, Kerala, Sikkim, Rajasthan to Bali, Dubai, Greece, Paris we have every destination covered for you. We also do Kedarnath, Badrinath, Bada Chaar Dham, and EVEN KAILASH MANSAROVAR. We are experienced and Specialized in Treks like Kedarkantha, Dayra Bhugyal, Kheerganga, Kareri Lake, Indrahaar. Hampta Pass, Rupin Pass, Naag Tibba, RoopKund, Chawkhamba, and numerous other treks.
 </p>
                 </Col>
@@ -124,7 +124,7 @@ Hope we all will see each other one day on a path where everything brings us tog
                   <Col sm={12} lg={6} xs={12}>
                     <center>
                       <p><h3> “Jobs fill your pockets, adventures fill your soul.”</h3></p>
-                
+
                     </center>
                   </Col>
                 </Row>
@@ -184,53 +184,53 @@ Hope we all will see each other one day on a path where everything brings us tog
               </div>
 
               <div className="team">
-             <div data-aos="flip-up"> <center><h1>OUR TEAM</h1></center></div>
-              <br></br><br></br>
-              <Row>
-              <Col>
-<div className="centerboi">             
-<div class="flip">
-    <div class="front" style={{ backgroundImage: `url(${fox})`}}>
-       <h1 class="text-shadow">AKASH RANA</h1>
-    </div>
-    <div class="back">
-       <h2>Akash Rana</h2>
-       <p>Owner.</p>
-    </div>
-</div>
-</div>
-</Col>
+                <div data-aos="flip-up"> <center><h1>OUR TEAM</h1></center></div>
+                <br></br><br></br>
+                <Row>
+                  <Col>
+                    <div className="centerboi">
+                      <div class="flip">
+                        <div class="front" style={{ backgroundImage: `url(${fox})` }}>
+                          <h1 class="text-shadow">AKASH RANA</h1>
+                        </div>
+                        <div class="back">
+                          <h2>Akash Rana</h2>
+                          <p>Owner.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Col>
 
-<Col>
-<div className="centerboi">             
-<div class="flip">
-    <div class="front" style={{ backgroundImage: `url(${fox})`}}>
-       <h1 class="text-shadow">ATOM PODDAR</h1>
-    </div>
-    <div class="back">
-       <h2>Atom Poddar</h2>
-       <p>Creative designer.</p>
-    </div>
-</div>
-</div>
-</Col>
-<Col>
-<div className="centerboi">             
-<div class="flip">
-    <div class="front" style={{ backgroundImage: `url(${fox})`}}>
-       <h1 class="text-shadow">DIGITAL FOX</h1>
-    </div>
-    <div class="back">
-       <h2>Digital Fox</h2>
-       <p>DigitalFox is a digital advertising innovation that simplistically aims on expanding the online presence and strategic branding of a business. Our services include SEO, PPC, Website design and Management, Social media marketing, Email marketing.
+                  <Col>
+                    <div className="centerboi">
+                      <div class="flip">
+                        <div class="front" style={{ backgroundImage: `url(${fox})` }}>
+                          <h1 class="text-shadow">ATOM PODDAR</h1>
+                        </div>
+                        <div class="back">
+                          <h2>Atom Poddar</h2>
+                          <p>Creative designer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col>
+                    <div className="centerboi">
+                      <div class="flip">
+                        <div class="front" style={{ backgroundImage: `url(${fox})` }}>
+                          <h1 class="text-shadow">DIGITAL FOX</h1>
+                        </div>
+                        <div class="back">
+                          <h2>Digital Fox</h2>
+                          <p>DigitalFox is a digital advertising innovation that simplistically aims on expanding the online presence and strategic branding of a business. Our services include SEO, PPC, Website design and Management, Social media marketing, Email marketing.
        <br /><br /><AiOutlineMail /> digitalfox_india@yahoo.com<br /><AiFillPhone /> 9821098496</p>
-    </div>
-</div>
-</div>
-</Col>
-</Row>
+                        </div>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
 
-              
+
               </div>
 
             </Container>
