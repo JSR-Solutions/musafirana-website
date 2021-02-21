@@ -30,7 +30,7 @@ function Custompac() {
 
   return (
     <div>
-      <div className="heading-custom">
+      <div data-aos="fade-down" className="heading-custom">
         <h2>Custom Package</h2>
         <h2>Custom Package</h2>
       </div>
