@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import "../Styles/Home.css";
-// import Typical from 'react-typical';
 import { Col, Row } from 'react-bootstrap';
 import PackageCard from "../Components/PackageCard";
 import OtherPackageCard from "../Components/OtherPackageCard";
@@ -12,6 +11,8 @@ import Sharebutton from '../Components/Sharebutton'
 import Spinner from 'react-bootstrap/Spinner';
 import Review from "../Components/review"
 import $ from "jquery";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const Home = () => {
 
@@ -25,9 +26,9 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
-      $(document).ready(function () {
-        $(this).scrollTop(0);
-      });
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+        });
     }, []);
 
     const fetchPackages = () => {
@@ -50,15 +51,26 @@ const Home = () => {
         });
     }
 
+    const responsive = {
+        0: { items: 1 },
+        619: { items: 2 },
+        920: { items: 3 },
+        1220: { items: 4 },
+        // 1400: { items: 4 }
+    };
+    const items = otherPackages.map((n, m) => {
+        return <OtherPackageCard pckg={n} key={m} />
+    });
+
     return (
-        <div>{isFetched ?         <div>
+        <div>{isFetched ? <div>
             <Header />
             <Sharebutton />
             <div className="home">
 
                 <HomeCarousel />
                 <div className="home-packages">
-                    <div data-aos="fade-right" className="trending-packages">
+                    <div className="trending-packages">
                         <div className="trending-title">
                             <h1 className="title-trending">Trending
                         <span className="title-trending" style={{ color: "#000" }}> Packages</span></h1>
@@ -81,30 +93,33 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="other-packages">
-                        <div data-aos="fade-left" className="trending-title">
+                        <div className="trending-title">
 
-                            <h1 className="title-other">Other
+                            <h1 className="title-other">Our
                         <span className="title-other"> Packages</span></h1>
                         </div>
-                        <div data-aos="fade-right" className="packages-trending">
+                        <div className="packages-trending">
                             <Row className="trending-packages-row">
-                                {
-                                    otherPackages && otherPackages.map((n, m) => {
-
-                                        return (
-                                            <Col sm={6} md={6} lg={4} xl={3} key={m}>
-                                                <OtherPackageCard pckg={n} />
-                                            </Col>
-                                        )
-
-                                    }
-                                    )}
+                                <AliceCarousel
+                                    responsive={responsive}
+                                    items={items}
+                                    fadeOutAnimation={true}
+                                    disableButtonsControls={false}
+                                    disableDotsControls={true}
+                                    infinite={true}
+                                    autoPlayInterval={2500}
+                                    autoPlayControls={false}
+                                    autoPlayStrategy={"all"}
+                                    autoPlay={true}
+                                    mouseTracking={true}
+                                    infinite
+                                />
                             </Row>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style={{height:"100%"}}>
+            <div style={{ height: "100%" }}>
                 <Review />
             </div>
             <Footer />

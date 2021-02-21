@@ -83,3 +83,30 @@
         padding-bottom: 210px;
     }
 }
+
+
+
+
+
+.alice-carousel__prev-btn{
+    background-color: var(--mainWhite) !important;
+    width: fit-content !important;
+    top: -240px !important;
+    position: relative !important;
+}
+.alice-carousel__prev-btn-item{
+    background-color: var(--mainWhite) !important;
+    color: var(--mainBlack) !important;
+}
+
+.alice-carousel__next-btn{
+    background-color: var(--mainWhite) !important;
+    width: fit-content !important;
+    position: absolute !important;
+    right: 0 !important;
+    margin-top: -240px !important;
+}
+.alice-carousel__next-btn-item{
+    background-color: var(--mainWhite) !important;
+    color: var(--mainBlack) !important;
+}
