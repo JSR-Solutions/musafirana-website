@@ -5,6 +5,7 @@ import "../Styles/Home.css";
 // import Typical from 'react-typical';
 import { Col, Row } from 'react-bootstrap';
 import PackageCard from "../Components/PackageCard";
+import OtherPackageCard from "../Components/OtherPackageCard";
 import firebase from "firebase";
 import HomeCarousel from "../Components/HomeCarousel";
 import Sharebutton from '../Components/Sharebutton'
@@ -57,7 +58,7 @@ const Home = () => {
 
                 <HomeCarousel />
                 <div className="home-packages">
-                    <div data-aos="fade-up" className="trending-packages">
+                    <div data-aos="fade-right" className="trending-packages">
                         <div className="trending-title">
                             <h1 className="title-trending">Trending
                         <span className="title-trending" style={{ color: "#000" }}> Packages</span></h1>
@@ -79,20 +80,20 @@ const Home = () => {
                             </Row>
                         </div>
                     </div>
-                    <div data-aos="fade-up" className="trending-packages">
-                        <div className="trending-title">
+                    <div className="other-packages">
+                        <div data-aos="fade-left" className="trending-title">
 
-                            <h1 className="title-trending">Other
-                        <span className="title-trending" style={{ color: "#000" }}> Packages</span></h1>
+                            <h1 className="title-other">Other
+                        <span className="title-other"> Packages</span></h1>
                         </div>
-                        <div className="packages-trending">
+                        <div data-aos="fade-right" className="packages-trending">
                             <Row className="trending-packages-row">
                                 {
                                     otherPackages && otherPackages.map((n, m) => {
 
                                         return (
                                             <Col sm={6} md={6} lg={4} xl={3} key={m}>
-                                                <PackageCard pckg={n} />
+                                                <OtherPackageCard pckg={n} />
                                             </Col>
                                         )
 
