@@ -18,7 +18,8 @@ import tag from '../Assets/tag.png'
 import support from '../Assets/support.png'
 import value from '../Assets/value.png'
 import hotels from '../Assets/hotels.png'
-import security from '../Assets/security.png'
+import security from '../Assets/security.png';
+import { Hourglass } from 'react-css-spinners'
 
 const Home = () => {
 
@@ -162,7 +163,7 @@ const Home = () => {
                 <Review />
             </div>
             <Footer />
-        </div> : <div className="loading-spinner"><Spinner animation="border" /></div>}</div>
+        </div> : <div className="loading-spinner"><Hourglass color="#fdfa56" /></div>}</div>
     );
 };
 
