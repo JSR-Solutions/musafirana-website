@@ -35,7 +35,7 @@ function Custompac() {
         <h2>Custom Package</h2>
       </div>
       <div className="parentcustom">
-        <Container data-aos="flip-left" className="contcustom">
+        <Container data-aos="fade-up" className="contcustom">
           <div data-aos="flip-right" className="formBox">
             <form>
               <h2>Request custom package</h2>

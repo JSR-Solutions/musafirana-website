@@ -226,6 +226,13 @@
 .banner2 p h3 {
   font-weight: normal;
   font-family: 'Libre Baskerville', serif !important;
+  
+}
+
+.banner2 center p h3 {
+  font-size: 40px;
+  font-style: italic;
+  padding-top: 100px;
 }
 
 
@@ -367,7 +374,7 @@
   height: 400px;
   padding: 16px 32px;
   background: black;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 4px solid black;
 
 }
@@ -380,9 +387,9 @@
 }
 
 .flip>.front h1 {
-  padding-top: 150px;
+  padding-top: 170px;
   font-size: 50px;
-  font-family: 'Oleo Script', cursive !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .text-shadow {

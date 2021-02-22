@@ -12,6 +12,8 @@ import value from '../Assets/value.png'
 import hotels from '../Assets/hotels.png'
 import security from '../Assets/security.png'
 import team from '../Assets/team.png'
+import ar from '../Assets/akashrana.jpeg'
+import atom from '../Assets/atom.jpeg'
 import tag from '../Assets/tag.png'
 import support from '../Assets/support.png'
 import fox from '../Assets/digitalfox.jpeg'
@@ -190,7 +192,7 @@ Hope we all will see each other one day on a path where everything brings us tog
                   <Col>
                     <div className="centerboi">
                       <div class="flip">
-                        <div class="front" style={{ backgroundImage: `url(${fox})` }}>
+                        <div class="front" style={{ backgroundImage: `url(${ar})` }}>
                           <h1 class="text-shadow">AKASH RANA</h1>
                         </div>
                         <div class="back">
@@ -204,7 +206,7 @@ Hope we all will see each other one day on a path where everything brings us tog
                   <Col>
                     <div className="centerboi">
                       <div class="flip">
-                        <div class="front" style={{ backgroundImage: `url(${fox})` }}>
+                        <div class="front" style={{ backgroundImage: `url(${atom})` }}>
                           <h1 class="text-shadow">ATOM PODDAR</h1>
                         </div>
                         <div class="back">

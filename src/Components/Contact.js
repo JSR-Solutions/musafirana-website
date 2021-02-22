@@ -42,7 +42,7 @@ function Contact() {
 
   return (
     <div className="topicontac">
-      <div className="heading-contact">
+      <div data-aos="fade-down" className="heading-contact">
         <h2>Contact Us</h2>
         <h2>Contact Us</h2>
       </div>
@@ -58,7 +58,7 @@ function Contact() {
                   <span>
                   <IoMdNavigate className = "tyu"/>
                   </span>
-                  <span>
+                  <span data-aos="flip-down">
                     1st line
                     <br /> 2nd line <br />{" "}
                   </span>
@@ -67,14 +67,14 @@ function Contact() {
                   <span>
                     <IoMdMail className = "tyu"/>
                   </span>
-                  <span>musafirranatravels@gmail.com </span>
+                  <span data-aos="flip-down">musafirranatravels@gmail.com </span>
                 </li>
                 <li>
                   <span>
                     {" "}
                     <IoIosCall className = "tyu"/>
                   </span>
-                  <span>+91-9868472340</span>
+                  <span data-aos="flip-down">+91-9868472340</span>
                 </li>
               </ul>
               <ul className="contac-sci">

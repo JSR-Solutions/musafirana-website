@@ -43,7 +43,7 @@ const Packages = () => {
                 <h2>Packages</h2>
                 <h2>Packages</h2>
             </div>
-            <div data-aos="flip-down" className="home-packages">
+            <div  className="home-packages">
             <div className="trending-packages">
                 <div className="trending-title">
                     <h1 className="title-trending">Our
