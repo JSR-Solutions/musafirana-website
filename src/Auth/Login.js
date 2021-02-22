@@ -82,7 +82,7 @@ const Login = ({ history }) => {
                 <div className="panel left-panel">
                     <div className="content">
                         <h3>Unlock some great adventures</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Minus impedit quidem quibusdam?</p>
+                        <p>Travel is the only thing you buy that makes you richer.</p>
                     </div>
 
                     <img src={login} className="image" alt="login-svg" />
