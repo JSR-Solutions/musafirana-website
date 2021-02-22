@@ -10,11 +10,11 @@
 .title-trending {
     text-align: center;
     font-weight: 600;
-    color: #000;
+    color: #fff;
 }
 
 .title-other {
-    color: #fff !important;
+    color: #000 !important;
     text-align: center;
     font-weight: 600;
 }
@@ -65,10 +65,11 @@
 
 .trending-packages {
     padding-bottom: 60px;
+    background-color: #000;
 }
 
 .other-packages {
-    background-color: #000;
+    background-color: #fff;
     padding-bottom: 60px;
 }
 
@@ -100,7 +101,7 @@
 .trending-package-card-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #000;
+    color: #fff;
     text-align: center;
     padding: 12px 80px;
     font-size: 20px;

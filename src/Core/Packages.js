@@ -47,7 +47,7 @@ const Packages = () => {
             <div className="trending-packages">
                 <div className="trending-title">
                     <h1 className="title-trending">Our
-                        <span className="title-trending" style={{ color: "#000" }}> Packages</span></h1>
+                        <span className="title-trending" style={{ color: "#fff" }}> Packages</span></h1>
                 </div>
                 <div className="packages-trending">
                     <Row className="trending-packages-row">

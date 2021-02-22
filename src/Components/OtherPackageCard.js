@@ -13,7 +13,7 @@ function OtherPackageCard({ pckg }) {
                     <div data-tilt className="card trending-package-card">
                         <div className="content trending-package-content">
                             <Link to={`/musafirrana/package/${pckg._id}`}><img src={pckg.data.imageUrl} alt="ladakh" className="trending-package-card-image" /></Link>
-                            <h3 style={{color: "#fff"}} className="trending-package-card-title">{pckg.data.name}</h3>
+                            <h3 style={{color: "#000"}} className="trending-package-card-title">{pckg.data.name}</h3>
                         </div>
                     </div>
                 </div>
