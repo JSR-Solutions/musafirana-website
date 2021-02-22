@@ -86,9 +86,8 @@
     height: 100vh !important;
     width: 100%;
     text-align: center;
-    position: absolute;
+    position: fixed;
     top: 50%;
-    color: #000;
 }
 
 /********************************* MEDIA QUERIES ****************************/

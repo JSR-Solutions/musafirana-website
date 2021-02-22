@@ -7,6 +7,7 @@ import { Col, Row } from 'react-bootstrap';
 import Spinner from 'react-bootstrap/Spinner';
 import "../Styles/Home.css";
 import $ from "jquery";
+import { Hourglass } from 'react-css-spinners'
 
 const Packages = () => {
     const [otherPackages, setOtherPackages] = useState([]);
@@ -65,7 +66,7 @@ const Packages = () => {
                 </div>
             </div>
             </div>
-            <Footer /></div> : <div className="loading-spinner"><Spinner animation="border" /></div>}
+            <Footer /></div> : <div className="loading-spinner"><Hourglass color="#fdfa56" /></div>}
         </div>
     );
 };
