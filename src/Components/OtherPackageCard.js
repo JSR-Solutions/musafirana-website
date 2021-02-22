@@ -14,6 +14,7 @@ function OtherPackageCard({ pckg }) {
                         <div className="content trending-package-content">
                             <Link to={`/musafirrana/package/${pckg._id}`}><img src={pckg.data.imageUrl} alt="ladakh" className="trending-package-card-image" /></Link>
                             <h3 style={{color: "#000"}} className="trending-package-card-title">{pckg.data.name}</h3>
+                            <p style={{color: "#000"}} className="trending-package-card-cost">Starts from Rs. {pckg && pckg.data.costing && pckg.data.costing[0].cost}</p>
                         </div>
                     </div>
                 </div>
