@@ -25,7 +25,7 @@ const Signup = () => {
             .then((userCredentials) => {
                 const user = userCredentials.user;
 
-                const myURL = { url: 'https://musafirrana.netlify.app/' }
+                const myURL = { url: 'https://musafirana.netlify.app/' }
                 user.sendEmailVerification(myURL).then(() => {
                     toast.success('Check your email inbox !!!')
                     setCredentials({ email: "", password: "" });
@@ -71,7 +71,7 @@ const Signup = () => {
                 <div className="panel right-panel">
                     <div className="content">
                         <h3>Sign up to a world of possibilities</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Minus impedit quidem quibusdam?</p>
+                        <p>The world is a book and those who do not travel read only one page.</p>
                     </div>
 
                     <img src={register} className="image" alt="register-svg" />
