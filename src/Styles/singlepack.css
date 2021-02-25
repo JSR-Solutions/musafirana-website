@@ -31,10 +31,11 @@
 .single-book-options button{
     line-height: 38px;
     padding: 0 6px;
-    background-color: rgb(183, 253, 244);
+    background-color: white;
     border: none;
     outline: none;
     box-shadow: all 0.4s ease;
+    border-radius: 8px;
 }
 .single-book-options button:nth-child(2){
     margin-left: 15px;

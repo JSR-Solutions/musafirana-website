@@ -1,7 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
 import "../Styles/PackageCard.css";
-import { Link } from 'react-router-dom'
 
 function PackageCard({ pckg }) {
 
