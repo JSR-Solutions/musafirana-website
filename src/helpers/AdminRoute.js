@@ -8,7 +8,7 @@ const AdminRoute = ({ component: Component, ...rest }) => {
         <Route
             {...rest}
             render={
-                props => isAuth() ? (<Component {...props} />) : (
+                props => isAuth() && isAuth().role && isAuth().role === 'musafiiranana@@admin' ? (<Component {...props} />) : (
                     <Redirect
                         to={{
                             pathname: '/login',

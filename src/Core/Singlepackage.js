@@ -90,7 +90,7 @@ const Singlepackage = (props) => {
                     generateTokenRazor(amount)
                         .then(data => {
                             const options = {
-                                key: "rzp_test_FLzJwnIjjLe9xD",
+                                key: "rzp_live_qWLh0f7sK6abuc",
                                 name: "MusafirRana",
                                 description: "Thank You for shopping with us.",
                                 currency: "INR",
