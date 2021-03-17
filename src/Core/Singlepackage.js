@@ -207,7 +207,7 @@ const Singlepackage = (props) => {
                                             }
                                             {
                                                 !isAuth() &&
-                                                <Link to='/login'><button>Book Online</button></Link>
+                                                <button><Link to='/login'>Book Online</Link></button>
                                             }
                                         </div>
                                     </div>
