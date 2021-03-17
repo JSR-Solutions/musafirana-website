@@ -13,6 +13,7 @@ function PackageCard({ pckg }) {
                         <div className="content trending-package-content">
                             <img src={pckg.data.imageUrl} alt="ladakh" className="trending-package-card-image" />
                             <h3 className="trending-package-card-title">{pckg.data.name}</h3>
+                            <p className="trending-package-card-cost">Starts from Rs. {pckg && pckg.data.costing && pckg.data.costing[0].cost}</p>
                         </div>
                     </div>
                 </div>
