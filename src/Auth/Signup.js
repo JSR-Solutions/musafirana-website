@@ -25,7 +25,7 @@ const Signup = () => {
             .then((userCredentials) => {
                 const user = userCredentials.user;
 
-                const myURL = { url: 'https://musafirana.netlify.app/' }
+                const myURL = { url: 'https://musafirranatravels.com/' }
                 user.sendEmailVerification(myURL).then(() => {
                     toast.success('Check your email inbox !!!')
                     setCredentials({ email: "", password: "" });
