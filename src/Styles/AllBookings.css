@@ -8,6 +8,7 @@
 .bookings-div {
     text-align: left;
     padding: 20px 30px !important;
+    min-height: 262px;
 }
 
 .bookings-row {

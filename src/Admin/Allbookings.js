@@ -40,7 +40,7 @@ const Allbookings = () => {
       </div>
       <div className="bookings-div">
           <Row className="bookings-row">
-          {booking && booking.map((book, index) => {
+          {booking && booking.length > 0 ? booking.map((book, index) => {
               return <Col key={book._id} className="bookings-card" lg={3} md={4} sm={12}>
                   <div className="single-booking">
                       <div><h6>Booking made by : {book.data.name}</h6></div>
@@ -53,7 +53,7 @@ const Allbookings = () => {
                       <div><Button onClick = {() => {deleteBooking(book._id)}} className="delete-booking" style={{padding: "8px"}} >Delete</Button></div>
                   </div>
               </Col>
-          })}
+          }) : <p>No bookings to show</p>}
           </Row>
       </div>
       <Footer />
