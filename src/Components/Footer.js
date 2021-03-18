@@ -76,7 +76,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col xs={12} sm={6} md={4} lg={3}>
+              <Col xs={12} sm={12} md={4} lg={3}>
                 <div className="home20">
                   <h3 className="margsake mm5">Follow Us</h3>
                   <div className="doob-marr-8">
