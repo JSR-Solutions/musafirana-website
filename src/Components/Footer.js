@@ -84,10 +84,9 @@ const Footer = () => {
                       <img className="logimg" src={Logo}></img>
                     </div>
                     <li>
-                      <a href="jdfakkl"><IoLogoTwitter className="foot-icon" /></a>
-                      <a href="jdfakkl"><IoLogoFacebook className="foot-icon" /></a>
-                      <a href="jdfakkl"><IoLogoWhatsapp className="foot-icon" /></a>
-                      <a href="jdfakkl"><AiFillInstagram className="foot-icon" /></a>
+                      <a href="https://www.facebook.com/musafirranaTravel/?ref=py_c"><IoLogoFacebook className="foot-icon" /></a>
+                      <a href={`https://api.whatsapp.com/send?phone=918800488956&text=Hi, I wanted to know about`}><IoLogoWhatsapp className="foot-icon" /></a>
+                      <a href="https://www.instagram.com/musafirrana_travels/?hl=en"><AiFillInstagram className="foot-icon" /></a>
                     </li>
                   </div>
                 </div>
