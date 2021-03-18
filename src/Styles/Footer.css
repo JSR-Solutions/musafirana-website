@@ -113,6 +113,7 @@
     overflow: hidden;
     margin-top: auto;
     width: 100% !important;
+    text-align: left !important;
 }
 .home16{
     padding-top: 70px;
@@ -147,27 +148,32 @@
 .home17{
     width: 80%;
     margin-left: auto !important;
+    text-align: left !important;
 }
 .home18{
     width: 100%;
     margin-left: auto !important;
+    text-align: left !important;
 }
 .home18 p{
     padding-top: 15px;
     color: white;
+    text-align: left !important;
 }
 .home19{
     width: 80%;
     margin-left: auto !important;
+    text-align: left !important;
 }
 .home20{
-    width: 80%;
+    width: 80% !important;
     margin-left: auto !important;
 }
 .home20 li{
     list-style-type: none !important;
     display: flex;
     flex-direction: column !important;
+    text-align: left !important;
 }
 .doob-marr-8{
     display: flex;
@@ -190,7 +196,8 @@
 }
 @media screen and (max-width: 768px){
     .logimg{
-        margin-left: 5px;
+        margin-left: 40px;
+        text-align: left !important;
     }   
     .home19{
         width: 80%;
@@ -205,6 +212,9 @@
     .home16{
         padding-top: 60px;
         width: 100%;
+    }
+    .logimg {
+        margin-left: 40px !important;
     }
     .doob-marr-8{
         display: flex;
