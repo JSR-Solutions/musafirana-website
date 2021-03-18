@@ -96,7 +96,8 @@ const Footer = () => {
 
             <Row>
               <div className="home21">
-                <p>@2020, Musafirrana. All Rights Reserved</p>
+                <p>© 2021 Musafirrana Travels.</p>
+                <p>All Rights Reserved.</p>
               </div>
             </Row>
 

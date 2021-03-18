@@ -18,7 +18,7 @@ const AdminDash = () => {
         <div>
             <Header />
             <div className="admin-dashboard">
-                <div className="admin-dashboard-title"><h1>Hello Admin</h1></div>
+                <div className="admin-dashboard-title"><h1>Hello Admin,</h1></div>
                 <Row className="admin-dashboard-row">
                     <Col><Link to='/admin/dashboard/alldestination'>
                             <Card>
